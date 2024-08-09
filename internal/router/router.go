@@ -22,5 +22,5 @@ func (c *Controller) RegisterRoutes() {
 	c.Router.Get("/", handlers.HomepageIndex())
 	c.Router.Get("/contact", handlers.ContactIndex())
 	c.Router.Get("/about", handlers.AboutIndex())
-	c.Router.Get("/posts", handlers.AboutIndex())
+	c.Router.Get("/posts/{slug}", handlers.PostsIndex())
 }

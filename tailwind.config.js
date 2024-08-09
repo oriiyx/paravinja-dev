@@ -19,7 +19,7 @@ module.exports = {
 	},
 	content: ["./views/**/*.templ}", "./**/*.templ"],
 	safelist: [],
-	plugins: [require("daisyui")],
+	plugins: [require("@tailwindcss/typography"), require("daisyui")],
 	daisyui: {
 		themes: ["white"]
 	}

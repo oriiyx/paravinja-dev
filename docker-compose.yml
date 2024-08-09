@@ -1,9 +1,5 @@
 version: '3.8'
 
-networks:
-  oriiyx-network:
-    driver: bridge
-
 services:
   app:
     build:
@@ -11,8 +7,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-      - "443:443"
-    networks:
-      - oriiyx-network
+
 
 

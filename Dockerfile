@@ -19,7 +19,6 @@ RUN go build -o ./build .
 
 # Expose ports
 EXPOSE 80
-EXPOSE 443
 
 # Command to run the executable
 CMD ["./build/paravinja-dev"]

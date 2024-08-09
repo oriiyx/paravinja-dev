@@ -2,11 +2,11 @@ package layout
 
 import "github.com/oriiyx/paravinja-dev/views/ui"
 
-templ App() {
+templ App(customTitle string) {
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<title>oriiyx</title>
+        @title(customTitle)
 		<link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -22,4 +22,12 @@ templ App() {
 		@ui.Footer()
 	</body>
 	</html>
+}
+
+templ title(title string) {
+  if title != "" {
+    <title>{title} | oriiyx</title>
+  } else {
+    <title>oriiyx</title>
+  }
 }

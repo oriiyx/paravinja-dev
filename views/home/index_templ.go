@@ -40,13 +40,13 @@ func Index() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container mx-auto mt-10 px-4 sm:px-0\"><h1>Posts</h1><img src=\"/public/nerd-meme.jpeg\" alt=\"nerd in front of a computer\" class=\"float-right h-0 rounded-3xl w-96 sm:h-auto mb-10\"><ul><li><a href=\"/posts/post-1\">Post 1</a></li></ul></div>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container mx-auto mt-10 px-4 sm:px-0\"><h1>Posts</h1><img src=\"/public/nerd-meme.jpeg\" alt=\"nerd in front of a computer\" class=\"float-right h-0 rounded-3xl w-96 sm:h-auto mb-10\"><ul><li><a href=\"/posts/dealing-with-mediocrity\">Dealing with mediocrity</a></li></ul></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
 			return templ_7745c5c3_Err
 		})
-		templ_7745c5c3_Err = layout.App().Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = layout.App("").Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

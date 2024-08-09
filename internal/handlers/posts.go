@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 
 	"github.com/go-chi/chi/v5"
 	posts2 "github.com/oriiyx/paravinja-dev/views/posts"
@@ -44,7 +45,7 @@ func PostsIndex() http.HandlerFunc {
 			panic(err)
 		}
 
-		err = posts2.Index(buf.String()).Render(r.Context(), w)
+		err = posts2.Index(buf.String(), strings.Replace(slug, "-", " ", -1)).Render(r.Context(), w)
 		if err != nil {
 			log.Println("Error occurred in rendering homepage: ", err)
 			return

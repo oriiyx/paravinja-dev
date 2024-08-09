@@ -4,8 +4,8 @@ import (
     "github.com/oriiyx/paravinja-dev/views/layout"
 )
 
-templ Index(blogPost string) {
-    @layout.App() {
+templ Index(blogPost, title string) {
+    @layout.App(title) {
         <div class="container mx-auto my-10 px-4 sm:px-0">
             <article class="prose">
                 @templ.Raw(blogPost)

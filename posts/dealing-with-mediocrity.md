@@ -1,4 +1,4 @@
-# Example
+# Dealing with Mediocrity
 
 This is an example of a post. You can write content in markdown format.
 

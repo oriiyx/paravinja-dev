@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/*@font-face {*/
-/*    font-family: Oswald;*/
-/*    src: url("./Chloe-Regular.otf") format("opentype");*/
-/*}*/
+@layer utilities {
+    .mask-image-gradient {
+        mask-image: radial-gradient(circle, transparent, white 10%, white 10%, transparent);
+    }
+}
 

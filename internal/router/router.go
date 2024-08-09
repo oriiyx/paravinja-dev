@@ -20,4 +20,7 @@ func (c *Controller) RegisterUses() {
 func (c *Controller) RegisterRoutes() {
 	c.Router.Handle("/*", http.StripPrefix("/public/", http.FileServerFS(os.DirFS("public"))))
 	c.Router.Get("/", handlers.HomepageIndex())
+	c.Router.Get("/contact", handlers.ContactIndex())
+	c.Router.Get("/about", handlers.AboutIndex())
+	c.Router.Get("/posts", handlers.AboutIndex())
 }

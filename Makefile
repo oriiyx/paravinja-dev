@@ -10,6 +10,7 @@ install:
 	@go mod download
 	@npm install -D tailwindcss
 	@npm install -D daisyui@latest
+	@npm install -D @tailwindcss/typography
 
 build:
 	npx tailwindcss -i ./views/css/app.css -o ./public/styles.css

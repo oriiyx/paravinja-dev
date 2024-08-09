@@ -32,4 +32,4 @@ go.work.sum
 
 /vendor
 /bin
-/public/styles.css
+/build/paravinja-dev

@@ -40,7 +40,7 @@ func Index() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container mx-auto mt-10 px-4 sm:px-0\"><h1>contact</h1><p>You can contact me via email <a href=\"mailto:paravinja92@gmail.com\">here</a>.</p><p>I don't like social media - but I do have a Linkedin account... I don't like Linkedin.</p></div>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container mx-auto mt-10 px-4 sm:px-0\"><h1 class=\"font-bold text-xl mb-2\">contact</h1><p>You can contact me via email <a class=\"underline\" href=\"mailto:paravinja92@gmail.com\">here</a>.</p><p>I don't like social media - but I do have a Linkedin account... I don't like Linkedin.</p></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

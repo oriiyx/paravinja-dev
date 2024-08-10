@@ -40,7 +40,7 @@ func Index() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container mx-auto mt-10 px-4 sm:px-0\"><h1>about</h1><p>SWE from Slovenia.</p></div>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container mx-auto mt-10 px-4 sm:px-0\"><h1 class=\"font-bold text-xl mb-2\">about</h1><p>SWE from Slovenia.</p><p>I love simplicity in software. I think it's an awesome way to keep a sane head while working long hours.</p><p>I love writing Go. I want to explore Zig and C language. I want to find out what functional bros like about functional paradigm.</p><p>Overall I have an open mind and want to approach new ideas without any preconceived notions.</p></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

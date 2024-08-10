@@ -1,5 +1,7 @@
 # pursuit of software simplicity
 
+// najprej kako sem na bigbangu doživel shock kompleksnosti
+
 // ideja da povem kako smo se lotili AJM - kako smo se odločili za "boljši" developer experience in bolj sodobono tehnologijo zavoljo enostavnejšega editor experience-a in bolj simple rešitve
 
 // nadaljujem s svojo izkušnjo NEXTjs - dobre in slabe stvari

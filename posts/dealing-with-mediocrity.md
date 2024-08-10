@@ -1,4 +1,4 @@
-# Dealing with mediocrity
+# dealing with mediocrity
 
 **How do we define 'mediocre'?**
 

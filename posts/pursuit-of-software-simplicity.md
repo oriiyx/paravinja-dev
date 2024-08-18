@@ -24,38 +24,43 @@ Well... as Doctor Jagger once said:
 _aww yeah_
 
 Thus, I was reassigned to a big project inside the company that was having very difficult times. Reassigned is a
-loosey-goosey word... I was thrown into a tsunami with a message "have fun".
+loosey-goosey word... I was thrown into a tsunami with a memo "have fun".
 
-It shocked me how big and intertwined the projects can become.
+It shocked me how big and intertwined projects can become.
 
 Even more of a shocker was how big the projects can become without having any proper tooling around them... People were
-deploying via FTP.
+deploying via FTP, but locally you had git instance where you had to track everything - but production wasn't synced
+with git - it was just for local development? What?
 
 You had to run the project in production environment otherwise it would not start.
 
-You could not run almost ANY of the commands straight out of the box since you could make changes on production servers.
-
-Git? Rofl
+You could not run almost ANY of the commands straight out of the box since you could make changes on production servers
+with the commands.
 
 Staging environment? Okay, relax there buddy.
 
-Developers responsible for this mess? Wanted to work on other projects and are 'busy' with other customers.
+Developers responsible for this mess? Working on other projects, side eyeing while being 'busy' with other customers.
 
 Customer happiness? Shouting at me on meetings and threatening with lawsuits level. Very nice.
 
 The codebase? Absolute disaster. Bugs everywhere - weekly sprints mostly filled with bug fixes.
 
-Technology used? Badly researched inside the company with bad practices and non-idiomatic approach all over the place.
+Technologies used? Badly researched inside the company with bad coding practices and non-idiomatic approach all over the
+place. But overall it was a "good" choice for the project.
 
 This type of system was complex. Very complex. You had to think and somehow test 10 different things when you made one
-change. You had 0 tests to help you with testing. You could not run some tests due to possibility of running production
+change. You had 0 programmatic tests to help you with testing. You couldn't run some tests due to possibility of running
+production
 services.
 
-We had to create a plan of steps that would reduce the complexity of the entire project. Reformat the codebase was
-easier said than done since somehow things broke even when reformatting.
+We had to create a plan of steps that would reduce the complexity of the entire project.
 
 Debugging was hard - abstracting method names and calling abstract $set and $get methods without prior checking if
-method exists on an object was nightmarish.
+method exists on an object was nightmarish while function jumping while functions just had another function call without
+1 param(why tho? Lazy?).
+
+I implemented a lot of additional logging to at least understand where we're shooting ourselves in the foot in the
+production.
 
 All those experiences shaped my mind that complex is not something that you really want as a programmer. You really want
 as simple as you can get and plan for it before you introduce complexity. Because once you introduced complexity, it's
@@ -78,7 +83,8 @@ solve.
 _raptor engines comparison_
 
 I saw the image that Spacex posted that depicted how they simplified Raptors engine design.
-What I see is that they've innovated so much that they've managed to simplify something as complex as a rocket engine.
+What my eyes see is ability to innovated so darn much that they've managed to simplify something as complex as a rocket
+engine. Amazing! I love this timeline!
 
 Now lets face it... most of us are not lucky enough to work on something as cool as a rocket engine. But I think that
 the innovation and simplification can be applied to almost anything. Programming in general has already tackled and

@@ -7,6 +7,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/oriiyx/paravinja-dev/internal/handlers"
+	m "github.com/oriiyx/paravinja-dev/internal/middleware"
 )
 
 type Controller struct {
@@ -15,6 +16,7 @@ type Controller struct {
 
 func (c *Controller) RegisterUses() {
 	c.Router.Use(middleware.Logger)
+	c.Router.Use(m.CacheControl)
 }
 
 func (c *Controller) RegisterRoutes() {

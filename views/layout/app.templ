@@ -7,15 +7,39 @@ templ App(customTitle string) {
 	<html lang="en">
 	<head>
         @title(customTitle)
-		<link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	    <meta name="description" content="Peter Paravinja is a software engineer with a passion for building applications and spending free time learning something new. This is my own personal website where I share my thoughts."/>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap');
-		</style>
-		<link rel="stylesheet" href="/public/styles.css"/>
-	</head>
+        <link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Peter Paravinja is a software engineer with a passion for building applications and spending free time learning something new. This is my own personal website where I share my thoughts."/>
+
+        <!-- Preload font files -->
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+
+        <!-- Fallback in case JavaScript is disabled -->
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+                rel="stylesheet"
+            />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+                rel="stylesheet"
+            />
+        </noscript>
+
+        <link rel="stylesheet" href="/public/styles.css"/>
+    </head>
 	<body class="antialiased">
 		@ui.Navigation()
 		{ children... }

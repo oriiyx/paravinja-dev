@@ -65,7 +65,7 @@ Ok - lets get this straight - I have friends. I have family. I could ask 20 of t
 
 ![image](/public/assets/forever-alone.png)
 
-_I friends okay!_
+_I have friends okay!_
 
 But I could never ask someone to help me out... and then proceed to nag him for 14 days if he used the application once
 per day...

@@ -5,13 +5,14 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strings"
 
 	"github.com/go-chi/chi/v5"
 	posts2 "github.com/oriiyx/paravinja-dev/views/posts"
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark-highlighting/v2"
+	"github.com/yuin/goldmark-meta"
 	"github.com/yuin/goldmark/extension"
+	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/util"
 )
 
@@ -37,15 +38,22 @@ func PostsIndex() http.HandlerFunc {
 				highlighting.NewHighlighting(
 					highlighting.WithWrapperRenderer(customWrapperRenderer),
 				),
+				meta.Meta,
 			),
 		)
 
 		var buf bytes.Buffer
-		if err := md.Convert(postByte, &buf); err != nil {
+		context := parser.NewContext()
+		if err := md.Convert(postByte, &buf, parser.WithContext(context)); err != nil {
 			panic(err)
 		}
 
-		err = posts2.Index(buf.String(), strings.Replace(slug, "-", " ", -1)).Render(r.Context(), w)
+		metaData := meta.Get(context)
+		title := metaData["Title"].(string)
+		author := metaData["Author"].(string)
+		summary := metaData["Summary"].(string)
+
+		err = posts2.Index(buf.String(), title, author, summary).Render(r.Context(), w)
 		if err != nil {
 			log.Println("Error occurred in rendering homepage: ", err)
 			return

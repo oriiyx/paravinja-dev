@@ -1,12 +1,19 @@
 package posts
 
-import (
-    "github.com/oriiyx/paravinja-dev/views/layout"
-)
+import "github.com/oriiyx/paravinja-dev/views/layout"
 
-templ Index(blogPost, title string) {
-    @layout.App(title) {
-        <div class="container mx-auto my-10 px-4 sm:px-0">
+templ Index(blogPost, title, author, summary string) {
+    @layout.App(title, summary) {
+        <div class="container py-2s mx-auto my-10 px-4 sm:px-0">
+            <header class="mb-8">
+                <h1 class="text-4xl font-bold mb-4">{title}</h1>
+                <div class="flex items-center mb-4">
+                    <div class="text-gray-600">
+                        <span class="font-medium">By {author}</span>
+                    </div>
+                </div>
+            </header>
+
             <article class="prose-sm">
                 @templ.Raw(blogPost)
             </article>

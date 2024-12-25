@@ -1,4 +1,8 @@
-# dealing with mediocrity
+---
+Title: dealing with mediocrity
+Summary: My own take on dealing with his own mediocrity
+Author: Peter Paravinja
+---
 
 **How do we define 'mediocre'?**
 

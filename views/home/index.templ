@@ -3,7 +3,7 @@ package home
 import "github.com/oriiyx/paravinja-dev/views/layout"
 
 templ Index() {
-    @layout.App("") {
+    @layout.App("", "") {
         <div class="container mx-auto mt-10 px-4 sm:px-0">
             <h1 class="font-bold text-xl mb-2">posts:</h1>
             <img src="/public/nerd-meme.jpeg" alt="nerd in front of a computer"
@@ -11,6 +11,7 @@ templ Index() {
             <ul class="list-inside list-disc mt-0">
                 <li class="m-0 underline"><a href="/posts/dealing-with-mediocrity">dealing with mediocrity</a></li>
                 <li class="m-0 underline"><a href="/posts/pursuit-of-software-simplicity">pursuit of software simplicity</a></li>
+                <li class="m-0 underline"><a href="/posts/publishing-a-mobile-app-in-2024">publishing a mobile app in 2024</a></li>
             </ul>
         </div>
     }

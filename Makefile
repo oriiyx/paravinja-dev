@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-run: build
+run: build-app
 	@./bin/main
 
 install:
@@ -12,7 +12,7 @@ install:
 	@npm install -D daisyui@latest
 	@npm install -D @tailwindcss/typography
 
-build:
+build-app:
 	npx tailwindcss -i ./views/css/app.css -o ./public/styles.css
 	@templ generate view
 	@go build -o bin/main

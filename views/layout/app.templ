@@ -2,15 +2,15 @@ package layout
 
 import "github.com/oriiyx/paravinja-dev/views/ui"
 
-templ App(customTitle string) {
+templ App(customTitle, desc string) {
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
         @title(customTitle)
+        @description(desc)
         <link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Peter Paravinja is a software engineer with a passion for building applications and spending free time learning something new. This is my own personal website where I share my thoughts."/>
 
         <!-- Preload font files -->
         <link
@@ -53,5 +53,13 @@ templ title(title string) {
     <title>{title} | oriiyx</title>
   } else {
     <title>oriiyx</title>
+  }
+}
+
+templ description(desc string) {
+  if desc != "" {
+    <meta name="description" content={desc}>
+  } else {
+    <meta name="description" content="Peter Paravinja is a software engineer with a passion for building applications and spending free time learning something new. This is my own personal website where I share my thoughts.">
   }
 }

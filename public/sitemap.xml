@@ -13,6 +13,14 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://oriiyx.dev/posts/publishing-a-mobile-app-in-2024</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://oriiyx.dev/posts/leaving-my-coding-comfort-zone-job</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://oriiyx.dev/about</loc>
         <priority>0.7</priority>
     </url>

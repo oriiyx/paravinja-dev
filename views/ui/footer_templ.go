@@ -29,7 +29,7 @@ func Footer() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<footer class=\"my-10 footer footer-center bg-base-300 text-base-content p-4 container mx-auto border-t\"><aside><p>Created with Go + Templ + Tailwind</p><p>Peter Paravinja</p></aside></footer>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<footer class=\"my-10 footer footer-center bg-base-300 text-base-content p-4 container mx-auto border-t\"><aside><p>Made with Go ❤️</p><p>Peter Paravinja</p></aside></footer>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

@@ -6,5 +6,9 @@
     .mask-image-gradient {
         mask-image: radial-gradient(circle, transparent, white 10%, white 10%, transparent);
     }
+
 }
 
+article a {
+    text-decoration: underline;
+}

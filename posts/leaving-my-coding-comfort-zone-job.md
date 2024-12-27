@@ -2,6 +2,7 @@
 Title: leaving my coding comfort zone job
 Summary: Writing about my own experience while changing programming jobs.
 Author: Peter Paravinja
+Published: 27. Dec 2024
 ---
 
 A while ago I wrote a blog post about [dealing with my own mediocrity](/posts/dealing-with-mediocrity) and while

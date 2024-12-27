@@ -52,8 +52,9 @@ func PostsIndex() http.HandlerFunc {
 		title := metaData["Title"].(string)
 		author := metaData["Author"].(string)
 		summary := metaData["Summary"].(string)
+		published := metaData["Published"].(string)
 
-		err = posts2.Index(buf.String(), title, author, summary).Render(r.Context(), w)
+		err = posts2.Index(buf.String(), title, author, summary, published).Render(r.Context(), w)
 		if err != nil {
 			log.Println("Error occurred in rendering homepage: ", err)
 			return

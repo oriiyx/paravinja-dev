@@ -2,6 +2,7 @@
 Title: publishing a mobile app in 2024
 Summary: First hand experience trying to publish a mobile application in 2024 / 2025.
 Author: Peter Paravinja
+Published: 25. Dec 2024
 ---
 
 Let me start by acknowledging that I completely understand that Google and Apple want to create a nice marketplace where

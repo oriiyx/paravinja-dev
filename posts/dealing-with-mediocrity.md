@@ -2,6 +2,7 @@
 Title: dealing with mediocrity
 Summary: My own take on dealing with his own mediocrity
 Author: Peter Paravinja
+Published: 9. Aug 2024
 ---
 
 **How do we define 'mediocre'?**

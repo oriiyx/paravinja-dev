@@ -2,6 +2,7 @@
 Title: pursuit of software simplicity
 Summary: Stung by over-complex systems, my own take on how important it is to pursuit the simplicity in design. 
 Author: Peter Paravinja
+Published: 14. Aug 2024
 ---
 
 Simplicity.

@@ -99,10 +99,7 @@ they're telling me I don't know how to fucking submit a Customer Cart form on an
 I'll update the post - but the process for Apple is really, really annoying and fucked tbh... why do I need to beg for
 them to enroll me in their developer program... the whole thing is really bizarre!
 
-## Conclusion
+## Update 27.12.2024
 
-- I didn't publish an application yet
-- It's pretty difficult process
-- Development is not the main protagonist as you might think
-- If you're a small fry like me its hard mentally
-- Feeling that nobody cares
+Google just approved my request to publish an application to production.
+Apple contacted me with an actual person this time! I think I will get enrollment into the developer program! Things are moving - slowly - but they're moving!

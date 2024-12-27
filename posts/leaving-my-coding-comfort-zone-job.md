@@ -57,6 +57,8 @@ in a position where I couldn't change it or improve it.
 That was the tipping point for me to decide to leave my comfort zone job for something that would stimulate additional
 knowledge growth in me.
 
+![walnut-fail.png](/public/assets/walnut-fail.png)
+
 I was working for an agency mostly writing PHP, Typescript and some Scala - and in Slovenia agencies have a bad
 reputation for not really being a good developer environment. And I agree with them to a point.
 
@@ -81,12 +83,12 @@ need the job it was actually more believable I guess :P)
 And I called out bullshit when I heard it.
 
 My approach to interviewing was dramatically different from what I was doing before. I actually liked it - because I
-came at the interview to systematically verify if they're worthy of me.
+came at the interview to systematically verify if they're "worth my time".
 
 Now don't get me wrong.
 
-If I didn't have a job - I would not do that... I am prepared to work the worst job if it means that I get €€ ($$ for my
-Americano friends).
+If I didn't have a job - I would not do that... I am prepared to work the worst job if it means that I get some of that
+€€ ($$ for my Americano friends).
 
 And I called out a lot of bullshit - I was able to figure out I am way above their top engineer from 10 minute talks. My
 hobby projects have better developer daily work flow with better practices, and I am not even trying that hard... I was
@@ -97,8 +99,10 @@ was the backbone of their business.
 
 Anyway
 
-In the end I chose a R&D company where they test out different authentication methods in combination with advance cryptography.
+In the end I chose a R&D company where they test out different authentication methods in combination with advance
+cryptography.
 
 I am really out of my place here now.
 
-But things are not completely like I wanted... I am starting to wonder if I should pursue something like my own company and focus on building everything that I think is needed for a good team environment.
+But things are not completely like I wanted... I am starting to wonder if I should pursue something like my own company
+and focus on building everything that I think is needed for a good team environment.

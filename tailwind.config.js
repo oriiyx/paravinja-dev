@@ -17,7 +17,7 @@ module.exports = {
 
 		},
 	},
-	content: ["./views/**/*.templ}", "./**/*.templ"],
+	content: ["./views/**/*.templ}", "./**/*.templ", "./**/*.go"],
 	safelist: [],
 	plugins: [require("@tailwindcss/typography"), require("daisyui")],
 	daisyui: {

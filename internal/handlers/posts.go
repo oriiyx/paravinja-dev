@@ -13,6 +13,7 @@ import (
 	"github.com/yuin/goldmark-meta"
 	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
+	"github.com/yuin/goldmark/renderer/html"
 	"github.com/yuin/goldmark/util"
 )
 
@@ -40,6 +41,10 @@ func PostsIndex() http.HandlerFunc {
 				),
 				meta.Meta,
 			),
+			goldmark.WithRendererOptions(
+				html.WithHardWraps(),
+				html.WithXHTML(),
+			),
 		)
 
 		var buf bytes.Buffer
@@ -64,7 +69,7 @@ func PostsIndex() http.HandlerFunc {
 
 func customWrapperRenderer(w util.BufWriter, ctx highlighting.CodeBlockContext, entering bool) {
 	if entering {
-		w.WriteString(`<div class="mockup-code">`)
+		w.WriteString(`<div class="mockup-code bg-gray-200 text-primary-content">`)
 	} else {
 		w.WriteString(`</div>`)
 	}
